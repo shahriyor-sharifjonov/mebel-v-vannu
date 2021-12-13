@@ -127,6 +127,129 @@
             }
         }
     }
+    &__tabitem{
+        padding: 60px 110px;
+        border: 1px solid #E9E9E9;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        @include media(1187){
+            padding: 30px;
+        }
+        @include media(809){
+            padding-bottom: 0;
+        }
+        &-title{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 47px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            color: #161616;
+            @include media(1187){
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 10px;
+                max-width: 430px;
+            }
+            @include media(809){
+                
+            }
+        }
+        &-desc{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 29px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: #616161;            
+            @include media(1187){
+                font-size: 15px;
+                line-height: 18px;
+                margin-bottom: 20px;
+                max-width: 365px;
+            }
+            @include media(809){
+                
+            }
+        }
+        &-btn{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #E96E2D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 310px;
+            height: 60px;
+            border: 1px solid #E96E2D;
+            box-sizing: border-box;
+            border-radius: 30px;
+            @include media(1187){
+                width: 210px;
+                height: 50px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            @include media(809){
+                margin-bottom: 30px;
+            }
+            &:hover{
+                text-decoration: none;
+                color: #E96E2D;
+            }
+        }
+        &-img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 437px;
+            @include media(1187){
+                max-width: 300px;
+            }
+            @include media(809){
+                position: static;
+                max-width: 100%;
+            }
+        }
+        &-bg{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 340px;
+            height: 100%;
+            border-left: 1px solid #E9E9E9;
+            @include media(809){
+                height: 150px;
+                width: 100%;
+                border: none;
+                border-top: 1px solid #E9E9E9;
+            }
+            &.green{
+                background: #F3FFF4;
+            }
+            &.blue{
+                background: #F3F9FF;
+            }
+            &.yellow{
+                background: #FFFEF3;
+            }
+            &.gray{
+                background: #FBFBFB;
+            }
+        }
+    }
     &__form{
         margin-bottom: 100px;
         margin-top: 100px;
