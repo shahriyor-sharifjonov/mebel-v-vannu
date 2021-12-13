@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title Document
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="styles/bootstrap.css")
+        link(rel="stylesheet" href="styles/index.css")
+        <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+    body.menu_visible.menu_visible_medium 
+        include components/header.pug 
+        +header
+        div(class="modal modal-search fade in" id="modalSearch" tabindex="-1" role="dialog" style="display: none;") 
+            div(class="modal-dialog" role="document")
+                div(class="b-popup_search--mobile")
+                    div(class="b-nav_button b-popup_search--mobile__top" style="position: absolute;")
+                        i(class="icon icon-search")
+                    div(class="b-popup_search--mobile__input")
+                        input(type="text" name="mob_search" placeholder="Умный поиск, введите запрос" autocomplete="off")
+                        button(type="button" class="btn btn-fill fullwidth b-popup_search--mobile__submit") Найти
+                    div(class="b-popup_search--mobile_results")
+                        div(class="b-popup_search_results__loading") Идёт поиск <img src="/images/ajax-loader-2.gif">
+                        div(class="b-popup_search_results__empty") Умный поиск, например: <strong style="font-weight: bold">тумбы 60 см</strong>
+                        div(class="b-popup_search--mobile_results__content")
+                            ul(class="b-popup_search--mobile_results-list")
+                        div(class="b-popup_search--mobile_results__all")
+                            a(href="#") Показать все результаты (<span class="b-popup_search_results-total"></span>)
+        include components/intro.pug 
+        +intro
+        script(src="/scripts/jquery.js") 
+        script(src="/scripts/jquery.cookie.js") 
+        script(src="/scripts/vendor.js") 
+        script(src="/scripts/main.js") 
+        script(src="/scripts/common.js") 
+        script(src="/scripts/category.js") 
+        script(src="/scripts/jquery.parsequery.js") 
+        script(src="/scripts/jquery.prettyloader.js") 
+        script(src="/scripts/filters.js") 
+        script(src="/scripts/banner.js") 
+        script(src="/scripts/jquery.cycle.js") 
+        script(src="/scripts/index.js") 

@@ -1,0 +1,75 @@
+mixin intro()
+    .section-category-grid(style="padding-top: 0;")
+        .container
+            .b-category-grid
+                .section-breadcrumbs.hide-on-small
+                    .row--narrow 
+                        .b-breadcrumbs 
+                            .b-breadcrumbs__list
+                                li(itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb") 
+                                    a(href="https://mebel-v-vannu.ru/" onclick="yaCounter13546952.reachGoal('BREADCRUMBS_CATEGORY'); gtag('event','BREADCRUMBS_CATEGORY'); return true;") 
+                                        span Главная 
+                                li(itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb") 
+                                    a(href="#!")
+                                        span Мебель на заказ
+                .intro__item 
+                    p.intro__item-title Мебель для ванной на заказ
+                    p.intro__item-desc Начните с первого шага. Оставьте заявку, и менеджер проекта свяжется с вами
+                    a(href="#form").intro__item-link Оставить заявку
+                    img(src="images/intro-img.png", alt="").intro__item-img
+    
+
+
+    .intro__tabs 
+        .sectionsection-showcase-product
+            .b-showcase-tab 
+                .container
+                    .tabs-scroll    
+                        .b-showcase-tab__nav.tab-nav
+                            ul.inline-list.tabs(data-tabs="tabs") 
+                                li.tab.active   
+                                    a(data-toggle="tab" href="#showcase-0")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 1. Оставить заявку
+                                li.tab  
+                                    a(data-toggle="tab" href="#showcase-1")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 2. Ожидайте приезда замерщика
+                                li.tab
+                                    a(data-toggle="tab" href="#showcase-2")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 3. Согласуйте детальный расчет
+                                li.tab
+                                    a(data-toggle="tab" href="#showcase-3")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 4. Заключите договор и внесите предоплату
+                                li.tab
+                                    a(data-toggle="tab" href="#showcase-4")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 5. Отправляем на изготовление
+                                li.tab
+                                    a(data-toggle="tab" href="#showcase-5")
+                                        span(style="font-size: 12px; white-space: break-spaces; text-align: left;") 6. Осуществим доставку и монтаж в 1 день
+                    .b-showcase-tab__content.tab-content.tab-content-slider
+                        .b-showcase-tab__tab-content.tab-pane.fade.active#showcase-0
+                            p birinchisi
+                        .b-showcase-tab__tab-content.tab-pane.fade#showcase-1
+                            p ikkinchisi
+                        .b-showcase-tab__tab-content.tab-pane.fade#showcase-2
+                            p uchinchisi
+                        .b-showcase-tab__tab-content.tab-pane.fade#showcase-3
+                            p to'rtinchisi
+                        .b-showcase-tab__tab-content.tab-pane.fade#showcase-4
+                            p beshinchisi
+                        .b-showcase-tab__tab-content.tab-pane.fade#showcase-5
+                            p oltinchisi
+
+
+
+    .intro__form#form
+        .intro__form-body.container
+            form(action="").intro__form-inner
+                p.intro__form-title Хотите заказать индивидуальную мебель для Вашей ванной?
+                p.intro__form-desc Оставьте заявку и мы свяжемся с Вами для уточнения всех вопросов и предварительного расчета!
+                input(type="text" placeholder="Имя").intro__form-input
+                input(type="text" placeholder="Телефон").intro__form-input
+                button(type="submit").intro__form-btn Оставить заявку
+                img(src="images/intro-img_2.png", alt="").intro__form-img 
+                div.intro__form-bg
+
+                                        
