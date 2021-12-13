@@ -83,6 +83,21 @@
     }
     &__tabs{
         margin-top: 50px;
+        margin-bottom: 50px;
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E96E2D;
+            border: 1px solid transparent;
+            background-clip: padding-box;
+            border-radius: 9999px;
+            background-color: #E96E2D;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            padding-top: 6px;
+        }
         .tab-nav{
             @include media(1187){
                 overflow-x: scroll;
@@ -91,12 +106,25 @@
         }
         .tabs{
             @include media(1187){
-                width: 1170px;
+                // width: 1100px;
+                width: max-content;
             }
         }
         .tab{
             margin: 0 5px; 
             width: calc(16.3% - 5px);
+            @include media(1187){
+                max-width: 180px;
+                width: max-content;
+            }
+            span{
+                text-align: center !important;
+                white-space: break-spaces !important;
+                font-size: 12px !important;
+                @include media(1187){
+                    text-align: left !important;
+                }
+            }
         }
     }
     &__form{
