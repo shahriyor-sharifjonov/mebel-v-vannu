@@ -18,7 +18,29 @@ mixin intro()
                     a(href="#form").intro__item-link Оставить заявку
                     img(src="images/intro-img.png", alt="").intro__item-img
     
+    .three
+        .three__body.container
+            .three__item
+                .three__item-img
+                    img(src="images/three-1.png" alt="" draggable="false")
+                p.three__item-p Индивидуальные проекты
+            .three__item
+                .three__item-img
+                    img(src="images/three-2.png" alt="" draggable="false")
+                p.three__item-p Бесплатное снятие замеров
+            .three__item
+                .three__item-img
+                    img(src="images/three-3.png" alt="" draggable="false")
+                p.three__item-p Влагостойкие материалы
 
+    .video 
+        .video__body.container 
+            .video__header  
+                h2.video__title Видео о нас - Мебель на заказ в магазине
+            .video__content 
+                img(src="images/video.png", alt="").video__img
+                a(href="#!").video__btn 
+                    img(src="images/play.svg", alt="")
 
     .intro__tabs 
         .sectionsection-showcase-product
@@ -89,7 +111,6 @@ mixin intro()
                                 img(src="images/tabitem-6.png", alt="").intro__tabitem-img
                                 .intro__tabitem-bg.green
 
-
     .intro__rects 
         .intro__container.container
             .intro__rects-body
@@ -116,7 +137,6 @@ mixin intro()
                         p.intro__rects-title Напольные тумбы для ванной
                         img(src="images/rect-6.png", alt="")
 
-
     .intro__form#form
         .intro__form-body.container
             form(action="").intro__form-inner
@@ -128,4 +148,44 @@ mixin intro()
                 img(src="images/intro-img_2.png", alt="").intro__form-img 
                 div.intro__form-bg
 
-                                        
+    .advantages 
+        .advantages__body.container 
+            h2.advantages__title Преимущества
+            .advantages__content 
+                .advantages__item 
+                    .advantages__item-img
+                        img(src="images/advantages-1.png", alt="")
+                    p.advantages__item-title Качественное исполнение
+                    p.advantages__item-p Влагостойкие, качественные материалы и фурнитура — залог длительной эксплуатации мебель. Наш гарнитур дольше сохраняет привлекательный вид и не портится под воздействием внешних факторов.
+                .advantages__item 
+                    .advantages__item-img
+                        img(src="images/advantages-2.png", alt="")
+                    p.advantages__item-title Функциональность
+                    p.advantages__item-p Выдвижные ящики, ниши, корзины и полки, ведущей немецкой фирмы Blum - максимально удобная, рациональная организация системы хранения и экономии пространства для ванной комнаты любого размера
+                .advantages__item 
+                    .advantages__item-img
+                        img(src="images/advantages-3.png", alt="")
+                    p.advantages__item-title Эстетичность
+                    p.advantages__item-p Мы считаем, что мебель должна быть красивой. Именно поэтому в нашем каталоге — только стильные и современные проекты. Мы используем щиты из натуральной древесины: дуба, сосны, ясеня, лиственницы и слэбы (продольные цельные спилы) карагача, дуба, шелковицы, американского и грецкого ореха. 
+                .advantages__item 
+                    .advantages__item-img
+                        img(src="images/advantages-4.png", alt="")
+                    p.advantages__item-title Все категории товара
+                    p.advantages__item-p В демонстрационном зале расположено все необходимое для оснащения ванных комнат. <br>Вниманию посетителей представлено сантехническое оборудование и мебель в ванную комнату для санузла с абсолютно любой площадью, планировкой, стилем.
+
+    .works 
+        .works__body.container 
+            h2.works__title Наши работы
+
+    .intro__form#form
+        .intro__form-body.container
+            form(action="").intro__form-inner
+                p.intro__form-title Хотите заказать индивидуальную мебель для Вашей ванной?
+                p.intro__form-desc Оставьте заявку и мы свяжемся с Вами для уточнения всех вопросов и предварительного расчета!
+                input(type="text" placeholder="Имя").intro__form-input
+                input(type="text" placeholder="Телефон").intro__form-input
+                button(type="submit").intro__form-btn Оставить заявку
+                img(src="images/intro-img_2.png", alt="").intro__form-img 
+                div.intro__form-bg 
+
+
