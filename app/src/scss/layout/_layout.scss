@@ -244,6 +244,9 @@
         @include media(809){
             margin-top: 50px;
             margin-bottom: 0px;
+            &.mb-50{
+                margin-bottom: 50px;
+            }
         }
         &-inner{
             border: 1px solid #E9E9E9;
@@ -276,6 +279,13 @@
                 line-height: 35px;
                 margin-bottom: 10px;
                 max-width: 550px;
+            }
+            @include media(810){
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+                line-height: 23px;
+                margin-bottom: 20px;
             }
         }
         &-desc{

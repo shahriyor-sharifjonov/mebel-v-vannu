@@ -176,8 +176,48 @@ mixin intro()
     .works 
         .works__body.container 
             h2.works__title Наши работы
+            .works__content 
+                .works__left 
+                    .works__row
+                        img(src="images/work-1.png", alt="")
+                        img(src="images/work-2.png", alt="").sm 
+                    .works__row
+                        img(src="images/work-3.png", alt="").sm 
+                        img(src="images/work-4.png", alt="")
+                .works__right    
+                    img(src="images/work-5.png", alt="")
 
-    .intro__form#form
+    .reviews 
+        .reviews__body.container 
+            h2.works__title Видео - отзывы
+            .swiper
+                .swiper-wrapper 
+                    .swiper-slide.reviews__item 
+                        .reviews__item-header 
+                            p Видео о нас - Мебель на заказ в магазине San Design
+                        .reviews__item-content 
+                            img(src="images/video.png", alt="").reviews__item-img
+                            a(href="#!").reviews__item-btn 
+                                img(src="images/play.svg", alt="") 
+                    .swiper-slide.reviews__item 
+                        .reviews__item-header 
+                            p Видео о нас - Мебель на заказ в магазине San Design
+                        .reviews__item-content 
+                            img(src="images/video.png", alt="").reviews__item-img
+                            a(href="#!").reviews__item-btn 
+                                img(src="images/play.svg", alt="") 
+                    .swiper-slide.reviews__item 
+                        .reviews__item-header 
+                            p Видео о нас - Мебель на заказ в магазине San Design
+                        .reviews__item-content 
+                            img(src="images/video.png", alt="").reviews__item-img
+                            a(href="#!").reviews__item-btn 
+                                img(src="images/play.svg", alt="") 
+                .swiper-button-next 
+                .swiper-button-prev 
+
+
+    .intro__form.mb-50#form
         .intro__form-body.container
             form(action="").intro__form-inner
                 p.intro__form-title Хотите заказать индивидуальную мебель для Вашей ванной?

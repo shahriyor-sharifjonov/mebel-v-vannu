@@ -169,5 +169,122 @@
     }
 }
 .works{
-    
+    margin-bottom: 100px;
+    &__title{
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47px;
+        color: #161616;
+        margin-bottom: 50px;
+        @include media(810){
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }    
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        @include media(810){
+            gap: 10px;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @include media(810){
+            gap: 10px;
+        }
+        img{
+            object-fit: cover;
+            width: calc(70% - 10px);
+            &.sm{
+                width: 30%;
+            }
+        }
+    }
+    &__right{
+        @include media(1186){
+            display: none;
+        }
+        img{
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.reviews{
+    @include media(1186){
+        .swiper{
+            padding-bottom: 65px;
+        }
+        .swiper-button{
+            &-next{
+                top: auto;
+                bottom: 0;
+                right: 0;
+                width: 50px;
+                opacity: 1;
+                &::after{
+                    content: url('../images/next.svg');
+                }
+            }
+            &-prev{
+                top: auto;
+                bottom: 0;
+                left: 0;
+                width: 50px;
+                opacity: 1;
+                &::after{
+                    content: url('../images/prev.svg');
+                }
+            }
+        }
+    }
+    &__item{
+        &-header{
+            background: #FBFBFB;
+            border: 1px solid #E9E9E9;
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 9px 0;
+            p{
+                text-align: center;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 21px;
+                color: #161616;
+                max-width: 283px;
+            }
+        }
+        &-content{
+            position: relative;
+            min-height: 200px;
+        }
+        &-img{
+            width: 100%;
+            min-height: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        &-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         title Document
         link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel="stylesheet" href="styles/bootstrap.css")
         link(rel="stylesheet" href="styles/index.css")
         <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
@@ -29,6 +30,8 @@ html(lang="en")
                             a(href="#") Показать все результаты (<span class="b-popup_search_results-total"></span>)
         include components/intro.pug 
         +intro
+        
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
         script(src="scripts/jquery.js") 
         script(src="scripts/jquery.cookie.js") 
         script(src="scripts/vendor.js") 
